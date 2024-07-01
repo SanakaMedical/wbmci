@@ -1,15 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
-import {
-  Box,
-  IconButton,
-  Typography,
-  Button,
-  Stack,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
-import PhoneIcon from "@mui/icons-material/Phone";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import TabWithPopup from "../../PopupForm/PopupForm";
 import { FormData } from "../../Home/Home";
 import { motion } from "framer-motion";
@@ -112,49 +102,7 @@ const Header: React.FC = () => {
           right: isMobile ? 20 : 40,
           zIndex: 20,
         }}
-      >
-        <Stack direction="column" spacing={1} alignItems="center">
-          <IconButton
-            href="https://wa.me/918420461369"
-            target="_blank"
-            sx={{
-              backgroundColor: "#25D366",
-              color: "white",
-              borderRadius: "50%",
-              width: isMobile ? 48 : 64,
-              height: isMobile ? 48 : 64,
-            }}
-          >
-            <WhatsAppIcon sx={{ fontSize: isMobile ? 28 : 40 }} />
-          </IconButton>
-          <Button
-            variant="outlined"
-            startIcon={<PhoneIcon />}
-            href="tel:+918017508002"
-            size="small"
-            sx={{
-              color: "white",
-              backgroundColor: "#28a745",
-              "&:hover": { backgroundColor: "#218838" },
-            }}
-          >
-            IVR 1
-          </Button>
-          <Button
-            variant="outlined"
-            startIcon={<PhoneIcon />}
-            href="tel:+917477798949"
-            size="small"
-            sx={{
-              color: "white",
-              backgroundColor: "#28a745",
-              "&:hover": { backgroundColor: "#218838" },
-            }}
-          >
-            IVR 2
-          </Button>
-        </Stack>
-      </motion.div>
+      ></motion.div>
       <TabWithPopup
         isOpen={isOpen}
         onSubmit={handleSubmit}
