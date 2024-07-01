@@ -71,16 +71,15 @@ const CarouselComponent: React.FC = () => {
     logo: string;
   }
   const demoData: CardData[] = [
-    { link: "https://example.com/1", logo: "../ExImages/sanaka.png" },
-    { link: "https://example.com/2", logo: "../ExImages/jims.jpg" },
-    { link: "https://example.com/1", logo: "../ExImages/Gouridevi.png" },
-    { link: "https://example.com/1", logo: "../ExImages/IQ-City.png" },
-    { link: "https://example.com/1", logo: "../ExImages/icare.png" },
-    { link: "https://example.com/1", logo: "../ExImages/santiniketan.png" },
-    { link: "https://example.com/1", logo: "../ExImages/JMN.png" },
-    { link: "https://example.com/1", logo: "../ExImages/KPC.png" },
+    { link: "https://sanakamedical.com/", logo: "../ExImages/sanaka.png" },
+    { link: "https://www.jimsh.org/", logo: "../ExImages/jims.jpg" },
+    { link: "https://gimsh.in/", logo: "../ExImages/Gouridevi.png" },
+    { link: "https://iqcity.in/", logo: "../ExImages/IQ-City.png" },
+    { link: "https://icaremedicalcollege.in/", logo: "../ExImages/icare.png" },
+    { link: "https://www.smcbangla.com/", logo: "../ExImages/santiniketan.png" },
+    { link: "https://jmnmedicalcollege.org.in/", logo: "../ExImages/JMN.png" },
+    { link: "https://www.kpcmedicalcollege.in/", logo: "../ExImages/KPC.png" },
   ];
-  
   return (
     <>
       <Box
