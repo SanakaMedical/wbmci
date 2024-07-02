@@ -10,22 +10,17 @@ const Footer: React.FC = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       sx={{
-        backgroundColor: "#1A1A1A",
-        color: "#FFFFFF",
-        py: { xs: 4, md: 6 },
+        backgroundColor: "#f5f5f5", // Light gray background
+        color: "#333333", // Dark gray text
+        py: 3, // Reduced padding
         mt: 3,
         textAlign: "center",
-        borderTop: "1px solid #333",
-        paddingTop: "20px",
-        borderRadius: "12px 12px 0 0", // Rounded corners at the top
+        borderTop: "1px solid #e0e0e0", // Lighter border
       }}
     >
       <Container maxWidth="lg">
-        <Typography variant="h5" gutterBottom sx={{ color: "#FF9800", fontWeight: "bold" }}>
-          This is a Product of Durgapur Education Foundation
-        </Typography>
-        <Typography variant="body1" sx={{ color: "#CCCCCC", lineHeight: 1.8 }}>
-          &copy; 2023 All rights reserved. Design & Developed by DEF.
+        <Typography variant="body2" sx={{ fontWeight: 500 }}>
+          © 2023 Durgapur Education Foundation. All rights reserved.
         </Typography>
       </Container>
     </Box>
