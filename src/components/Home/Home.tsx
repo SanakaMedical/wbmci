@@ -96,6 +96,8 @@ const CarouselComponent: React.FC = () => {
           alignItems: "center",
           justifyContent: "center",
           pt: "10px",
+          backgroundColor: "#f5f5f5", // Background color for the carousel
+          padding: "20px 0", // Padding for top and bottom
         }}
       >
         <Grid container spacing={isMobile ? 2 : 3}>
@@ -116,6 +118,7 @@ const CarouselComponent: React.FC = () => {
                     transform: "scale(1.03)",
                     boxShadow: "0 8px 16px rgba(0,0,0,0.4)", // Darkened shadow on hover
                   },
+                  backgroundColor: "#fff", // Background color for card
                 }}
               >
                 <CardActionArea
@@ -126,6 +129,7 @@ const CarouselComponent: React.FC = () => {
                     justifyContent: "space-between",
                     padding: "1rem",
                   }}
+                  onClick={() => handleButtonClick(card.link)} // Move the onClick handler here to ensure it works correctly
                 >
                   <CardContent
                     sx={{
@@ -148,7 +152,6 @@ const CarouselComponent: React.FC = () => {
                       }}
                     />
                     <Typography
-                      onClick={() => handleButtonClick(card.link)}
                       sx={{
                         color: "#FFFFFF",
                         backgroundColor: "#0035b3",
@@ -156,6 +159,10 @@ const CarouselComponent: React.FC = () => {
                         padding: "12px 12px",
                         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                         transition: "background-color 0.3s ease",
+                        cursor: "pointer", // Make cursor a pointer to indicate clickable
+                        "&:hover": {
+                          backgroundColor: "#002080", // Darker shade on hover
+                        },
                       }}
                     >
                       View More
