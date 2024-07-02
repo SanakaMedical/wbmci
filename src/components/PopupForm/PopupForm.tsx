@@ -1,4 +1,3 @@
-
 // import React, { useState } from "react";
 // import {
 //   Dialog,
@@ -187,7 +186,6 @@
 
 // export default TabWithPopup;
 
-
 import React, { useState } from "react";
 import {
   Dialog,
@@ -239,7 +237,7 @@ const TabWithPopup: React.FC<TabWithPopupProps> = ({
   const [phoneError, setPhoneError] = useState<string | null>(null);
   const [emailError, setEmailError] = useState<string | null>(null);
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
 
     // Update form data state
@@ -370,10 +368,31 @@ const TabWithPopup: React.FC<TabWithPopupProps> = ({
             onChange={handleChange}
             label="College"
           >
-            <MenuItem value="College A">College A</MenuItem>
-            <MenuItem value="College B">College B</MenuItem>
-            <MenuItem value="College C">College C</MenuItem>
-            <MenuItem value="College D">College D</MenuItem>
+            <MenuItem value="College of Medicine and JNM Hospital">
+              College of Medicine and JNM Hospital
+            </MenuItem>
+            <MenuItem value="KPC Medical College and Hospital">
+              KPC Medical College and Hospital
+            </MenuItem>
+            <MenuItem value="IQ City Medical College, Durgapur">
+              IQ City Medical College, Durgapur
+            </MenuItem>
+            <MenuItem value="Gouri Devi Institute of Medical Sciences">
+              Gouri Devi Institute of Medical Sciences
+            </MenuItem>
+            <MenuItem value="Santiniketan Medical College">
+              Santiniketan Medical College
+            </MenuItem>
+            <MenuItem value="ICARE INSTITUTE OF MEDICAL SCIENCES">
+              ICARE INSTITUTE OF MEDICAL SCIENCES
+            </MenuItem>
+            <MenuItem value="Jagannath Gupta Institute of Medical Sciences">
+              Jagannath Gupta Institute of Medical Sciences
+            </MenuItem>
+            <MenuItem value="Shri Ramakrishna Institute of Medical Science">
+              Shri Ramakrishna Institute of Medical Science
+            </MenuItem>
+
             {/* Add more colleges as needed */}
           </Select>
         </FormControl>
