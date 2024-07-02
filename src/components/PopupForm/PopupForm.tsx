@@ -236,7 +236,6 @@ const TabWithPopup: React.FC<TabWithPopupProps> = ({
     place: "",
     college: "", // Initialize college field
   });
-  console.log(formData)
   const [phoneError, setPhoneError] = useState<string | null>(null);
   const [emailError, setEmailError] = useState<string | null>(null);
 

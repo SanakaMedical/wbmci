@@ -8,6 +8,7 @@ interface Credentials {
   email: string;
   phoneNumber: string;
   course:string,
+  college:string,
   place:string,
   leads?:[]
 }
