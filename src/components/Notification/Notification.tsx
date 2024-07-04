@@ -76,20 +76,20 @@ const NotificationBar: React.FC<NotificationBarProps> = ({ duration = 40 }) => {
 
   const demoItems: NotificationItem[] = [
     {
-      message: "MBBS admission open for session 2024-2025",
-      link: "/features/dark-mode",
+      message: "NEET UG Counselling 2024 Starts From July 6",
+      link: "/",
       ConfirmationMessage:
         "Your information has been shared with our College Representative. They will call you back soon. You can also reach them at the following numbers : 7477798949",
     },
     {
-      message: "Scholarship,Loan & Student Credit Card Facility Available",
-      link: "/summer-sale",
+      message: "NTA re-exam result at exams.nta.ac.in/NEET/",
+      link: "https://exams.nta.ac.in/NEET/",
       ConfirmationMessage:
         "Your information has been shared with our College Representative. They will call you back soon. You can also reach them at the following numbers : 7477798950",
     },
     {
-      message: "25% Scholarship Available",
-      link: "/webinars/react-best-practices",
+      message: "Counselling notification and schedule awaited on mcc.nic.in",
+      link: "https://mcc.nic.in/",
       ConfirmationMessage:
         "Your information has been shared with our College Representative. They will call you back soon. You can also reach them at the following numbers : 7063592396",
     },
