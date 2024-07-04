@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   Dialog,
@@ -16,7 +15,7 @@ import { leadRegister } from "../../app/leads/leadSlice";
 import { AppDispatch } from "../../store";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
-
+import { states } from "./state";
 interface TabWithPopupProps {
   isOpen: boolean;
   onSubmit: (data: FormData) => void;
@@ -209,16 +208,23 @@ const TabWithPopup: React.FC<TabWithPopupProps> = ({
             {/* Add more colleges as needed */}
           </Select>
         </FormControl>
-        <TextField
-          margin="dense"
-          name="place"
-          label="Place"
-          type="text"
-          fullWidth
-          variant="standard"
-          value={formData.place}
-          onChange={handleChange}
-        />
+        <FormControl fullWidth sx={{ mt: 2 }}>
+          <InputLabel id="place-label">Place</InputLabel>
+          <Select
+            labelId="place-label"
+            id="place"
+            name="place"
+            value={formData.place}
+            onChange={handleChange}
+            label="Place"
+          >
+            {states.map((state) => (
+              <MenuItem key={state} value={state}>
+                {state}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
       </DialogContent>
       <DialogActions>
         <Button onClick={handleSubmit}>Submit</Button>
