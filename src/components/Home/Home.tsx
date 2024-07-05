@@ -105,7 +105,7 @@ const CarouselComponent: React.FC = () => {
             <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
               <Card
                 sx={{
-                  height: "55vh",
+                  height: "60vh",
                   width: "auto",
                   display: "flex",
                   flexDirection: "column",
