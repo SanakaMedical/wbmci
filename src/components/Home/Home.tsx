@@ -82,6 +82,8 @@ const CarouselComponent: React.FC = () => {
     },
     { link: "https://jmnmedicalcollege.org.in/", logo: "../ExImages/JMN.png" },
     { link: "https://www.kpcmedicalcollege.in/", logo: "../ExImages/KPC.png" },
+    { link: "https://eastwestmedical.in/", logo: "../ExImages/BlackLogo-CpuD5bhO.png" },
+
   ];
 
   return (
